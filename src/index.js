@@ -5,7 +5,7 @@ import swaggerDoc from '../swagger.json'; //option to use the local swagger json
 const app = express();
 const PORT = 3000;
 
-var options = {
+const options = {
     swaggerOptions: {
       url: 'http://api.swaggerhub.com/apis/toswim100/calculator/1.0.0?resolved=true'
     }
