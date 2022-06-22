@@ -1,0 +1,128 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Calculator API",
+      "description": " This is a simple API Calculator with swagger",
+      "version": "1.0.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/add/{a}&{b}": {
+        "get": {
+          "description": "חיבור שני מספרים",
+          "operationId": "ADD",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "המספר הראשון.",
+              "required": true,
+              "default": "1",
+              "type": "number"
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "המספר השני",
+              "required": true,
+              "default": "2",
+              "type": "number"
+
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/sub/{a}&{b}": {
+        "get": {
+          "description": "חיסור שני מספרים",
+          "operationId": "SUB",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "המספר הראשון.",
+              "required": true,
+              "default": "1",
+              "enum": [
+                "10"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "המספר השני.",
+              "required": true,
+              "default": "3",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/div/{a}&{b}": {
+        "get": {
+          "description": "חילוק שני מספרים",
+          "operationId": "DIV",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "המספר הראשון.",
+              "required": true,
+              "default": "5",
+              "enum": [
+                "10"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "המספר השני.",
+              "required": true,
+              "default": "5",
+              "enum": [
+                "15"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/mult/{a}&{b}": {
+        "get": {
+          "description": "הכפלת שני מספרים",
+          "operationId": "MULT",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "המספר הראשון.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "2"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "המספר השני.",
+              "required": true,
+              "default": "15",
+              "enum": [
+                "10"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      }
+    }   
+}

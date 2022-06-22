@@ -1,0 +1,33 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator with Swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon src/index.js --exec babel-node",
+    "prod": "npm run build&&set NODE_ENV=production&&node build/index.js",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imanuel1/Calculator.git"
+  },
+  "author": "AI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imanuel1/Calculator/issues"
+  },
+  "homepage": "https://github.com/Imanuel1/Calculator#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2"
+  }
+}
